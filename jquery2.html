@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // ini adalah deklarasi untuk selector tag
+            $("input").click(function(){
+                // ini untuk deklarasi penggunaan id
+                alert("selamat siang sobat");
+            });
+            $(".tes").css({
+                "background-color":"orange",
+                "text-align": "center"
+            });
+            $("#test").css({
+                "background-color": "blue",
+                "text-align" : "center"
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <input type="submit" value="Salam" id="">
+    <p class="tes">ini adalah warna Jeruk</p>
+    <p id="test">ini adalah warna Jeruk</p>
+
+
+  </body>
+</html>

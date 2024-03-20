@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery handler</title>
+    <link rel="stylesheet" href="css/style1.css">
+  </head>
+  <body>
+    <h2>Letakkan kursor ke masing masing kotak untuk melihat</h2>
+    <div id="div1">
+        jin anime
+    </div>
+    <div id="div2">
+        Gambar kucing
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#div1").mouseover(function(){
+                $(this).css({
+                    background: "url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b128882d-67a7-4a5c-8bf3-b430fd218b9d/de592so-ea5a8e3f-6cad-48f9-98a5-3098f9c4ca9a.png/v1/fill/w_1192,h_670/mori_jin_kick_png__can_be_used_for_a_background__by_officialeaero_de592so-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvYjEyODg4MmQtNjdhNy00YTVjLThiZjMtYjQzMGZkMjE4YjlkXC9kZTU5MnNvLWVhNWE4ZTNmLTZjYWQtNDhmOS05OGE1LTMwOThmOWM0Y2E5YS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.flIdR-17LfcI1JnKBjCelrcPExh1tmRrwu7sAN7LX6w')"
+                });
+            });
+            $("div").mouseout(function(){
+                $(this).css({
+                   background: "green"
+                });
+            });
+            $("#div2").mouseover(function(){
+                $(this).css({
+                    background: "url('https://web.rupa.ai/wp-content/uploads/2023/08/aruna3619_A_captivating_image_of_a_Scottish_Fold_cat_its_distin_5a9ee468-ba3b-4e65-bf9a-e2b8372768bd-600x336.png')"
+                });
+            });
+        });
+
+    </script>
+
+
+
+  </body>
+</html>

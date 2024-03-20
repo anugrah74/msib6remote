@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Latihan DOM</title>
+  </head>
+  <body>
+    
+    <h1 id="isi"></h1>
+    <p id="warna"> warna </p>
+    <script>
+        alert('Haloo');
+        // menentukan elemen di html menggunakan innerHTML dengan mencari id
+        // contoh pembuatan DOM dengan element id 
+        document.getElementById("isi").innerHTML =" Halo nama saya anugrah";
+        
+        // proses pembuatan element dan tag didalam javascript
+        let div =document.createElement('div');
+        div.id ='content';
+        div.innerHTML ='<p> Contoh menambahkan Element </p>';
+        document.body.appendChild(div);
+
+        // pewarnaan atau mengganti atribute
+        document.getElementById("warna").style.color ="blue";
+
+
+    </script>
+    <script>
+        // membuat function void => yang tidak mengembalikan nilai /tidak menampilkan proses
+        function salam(nama){// salam adalah function , sedangkan nama adlah parameter
+            document.write(`Apa kabar ${nama} ? <br>`);
+        }
+        let siswa ="Fawaz";
+        salam(siswa);
+        salam("inaya");
+        
+    </script>
+
+
+  </body>
+</html>

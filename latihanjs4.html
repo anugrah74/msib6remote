@@ -1,0 +1,35 @@
+<script>
+    
+    //variabel
+    let pelanggan ="Siti";
+    let produk ="AC";
+
+    //tv 
+    // if(produk == 'TV'){
+    //     harsat = 300000;
+    // }else if(produk == "kulkas"){
+    //     harsat = 400000;
+    // }else if(produk == "AC"){
+    //     harsat = 500000;
+    // }else{
+    //     harsat=0;
+    // }
+    let harsat = 0;
+    switch(produk){
+        case 'TV' : harsat = 300000; break;
+        case 'kulkal' : harsat = 400000; break;
+        case 'AC' : harsat = 300000; break;
+        default: harsat = 0;
+    }
+    let jmlBeli = 15;
+    let bruto = harsat * jmlBeli;
+    let diskon =(produk == 'AC') ? 0.1 * bruto :0;
+
+    document.write("Data Pemmbelian"+
+    "<br> Pelanggan : " + pelanggan+
+    "<br> Produk Pilihan : " + produk+
+    "<br> Harga Satuan : " + harsat+
+    "<br> Harga Kotor (bruto) : " + bruto+
+    "<br> Diskon : " + diskon);
+
+</script>
